@@ -45,9 +45,10 @@ def shop1(request):
 def shop2(request):
 
     posts = Post.objects.get(p_id=3)
-    return render(request,'blog/shop1.html',{'posts':posts})
+    return render(request,'blog/shop2.html',{'posts':posts})
+
 
 def shop3(request):
 
-    posts = Post.objects.get(p_id=4)
+    posts = Post.objects.get(p_id=8)
     return render(request,'blog/shop3.html',{'posts':posts})
